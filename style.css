@@ -10,13 +10,22 @@ body {
 }
 
 /* Container for centering the form */
-.herons-formula {
+.container{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    width: 100%;
+    width: 50%;
     max-width: 500px;
+}
+
+.herons-formula {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.ambiguous-case {
+    margin-right: 10px;
 }
 
 /* Form heading */

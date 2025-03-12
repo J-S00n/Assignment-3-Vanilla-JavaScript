@@ -1,4 +1,4 @@
-document.getElementById("heron's-form").addEventListener("submit", function(event) {
+document.getElementById("herons-form").addEventListener("submit", function(event) {
     event.preventDefault();
     const sideA = document.getElementById("side-a").value;
     const sideB = document.getElementById("side-b").value;
