@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    grid-gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -16,16 +23,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: auto;
-    height: auto;
+    align-items: center;
+    margin: 10px;
+    width: 370px;
+    height: 725px;
+    box-sizing: border-box;
+    /* Ensures padding is included in width and height */
 }
 
 /* Form heading */
@@ -38,6 +43,7 @@ h1 {
 
 /* Form input fields and labels */
 form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -58,6 +64,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     font-size: 1em;
     width: 100%;
+    max-width: 600px;
     box-sizing: border-box;
 }
 
