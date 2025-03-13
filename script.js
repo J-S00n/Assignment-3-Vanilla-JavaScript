@@ -50,3 +50,24 @@ document.getElementById("newtons-method-form").addEventListener("submit", functi
 
     document.getElementById("approx").value = calculatedRoot.toFixed(6);
 })
+
+document.getElementById("poly-func").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const coefficients = document.getElementById("coefficients").value.split(" ");
+    const exp = document.getElementById("exponents").value.split(" ");
+    const x = document.getElementById("x-value").value;
+    let polyFunction = [];
+    let functionValue = [];
+    let evaluation = 0;
+
+    for (let i = 0; i < coefficients.length; i++) {
+        polyFunction.push(coefficients[i] + "x ^ " + exp[i]);
+    }
+
+    for (let i = 0; i < coefficients.length; i++) {
+        functionValue.push(coefficients[i] * x ** exp[i]);
+        evaluation += functionValue[i];
+    }
+    document.getElementById("result-1").value = "f(x) = " + polyFunction.join(" + ");
+    document.getElementById("result-2").value = "f(" + x + ") = " + evaluation;
+})
