@@ -3,7 +3,7 @@ document.getElementById("herons-form").addEventListener("submit", function (even
     const sideA = document.getElementById("side-a").value;
     const sideB = document.getElementById("side-b").value;
     const sideC = document.getElementById("side-c").value;
-    const area = (1 / 4) * (Math.sqrt((4 * (sideA ** 2) * (sideB ** 2) - ((sideA ** 2) + (sideB ** 2) - (sideC ** 2)) ** 2)));
+    const area = 1 / 4 * Math.sqrt(4 * sideA ** 2 * sideB ** 2 - (sideA ** 2 + sideB ** 2 - sideC ** 2) ** 2);
 
     document.getElementById("area-result").value = area;
 })
