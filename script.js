@@ -20,8 +20,8 @@ document.getElementById("amb-case").addEventListener("submit", function (event) 
     const h = sideB * Math.sin(angleA * Math.PI / 180);
 
     if (angleA < 0 || angleA > 180 || sideA < 0 || sideB < 0) {
-        setResult("Invalid angle");
-    }else if (angleA < 90) {
+        document.getElementById("result").value = "No triangle";
+    } else if (angleA < 90) {
         if (sideA < h) {
             document.getElementById("result").value = "No triangle";
         } else if (Math.abs(sideA - h) < 0.0001) {
