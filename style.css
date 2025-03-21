@@ -8,13 +8,19 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Responsive grid */
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Container for centering the form */
