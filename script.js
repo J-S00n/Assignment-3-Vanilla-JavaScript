@@ -30,12 +30,16 @@ document.getElementById("amb-case").addEventListener("submit", function (event) 
             document.getElementById("result").value = "One triangle";
         } else if (sideA > h && sideA < sideB) {
             document.getElementById("result").value = "Two triangles (ambiguous)";
+        } else {
+            document.getElementById("result").value = "No triangle";
         }
     } else if (angleA > 90) {
         if (sideA < sideB || sideA === sideB) {
             document.getElementById("result").value = "No triangle";
         } else if (sideA > sideB) {
             document.getElementById("result").value = "One triangle";
+        } else {
+            document.getElementById("result").value = "No triangle";
         }
     } else {
         document.getElementById("result").value = "No triangle";
